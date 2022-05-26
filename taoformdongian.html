@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h2 {
+            background-color: orangered;
+            text-align: center;
+            color: white;
+        }
+        form {
+            border: 1px solid black;
+            width: 50%;
+        }
+        table {
+            padding-left: 50px;
+        }
+        #name {
+            width: 225px;
+        }
+        #email {
+            width: 175px;
+        }
+        #hobby {
+            margin: 5px;
+        }
+        input[type=checkbox] {
+            vertical-align: middle;
+            position: relative;
+            bottom: 1px;
+        }
+        #text {
+            color: blue;
+            text-align: justify;
+            vertical-align: text-top;
+        }
+    </style>
+    <title>Simple Form</title>
+</head>
+<body>
+    <form action="">
+        <h2>SỞ THÍCH CỦA BẠN</h2>
+        <table>
+            <tr>
+                <td id="text">Họ và tên </td>
+                <td><input type="text" name="yourname" id="name"></td>
+            </tr>
+            <tr>
+                <td id="text">Email </td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td id="text">Sở thích</td>
+                <td>
+                    <input type="checkbox" name="hobby" id="hobby">Thể Thao
+                    <input type="checkbox" name="hobby" id="hobby">Âm nhạc
+                    <input type="checkbox" name="hobby" id="hobby">Đọc sách <br>
+                    <input type="checkbox" name="hobby" id="hobby">Lướt web
+                    <input type="checkbox" name="hobby" id="hobby">Chơi game
+                    <input type="checkbox" name="hobby" id="hobby">Điện ảnh <br>
+                    <input type="checkbox" name="hobby" id="hobby">Du lịch
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Gửi thông tin">
+                    <input type="reset" value="Nhập lại">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
